@@ -1,10 +1,12 @@
 package bertanha.com.br.aluraviagens.ui.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import bertanha.com.br.aluraviagens.R;
@@ -23,6 +25,11 @@ public class ListaPacotesActivity extends AppCompatActivity {
 
         setTitle(TITULO_APPBAR);
         configuraLista();
+
+        Intent intent = new Intent(this, ResumoPacoteActivity.class);
+        startActivity(intent);
+
+
     }
 
     private void configuraLista() {
